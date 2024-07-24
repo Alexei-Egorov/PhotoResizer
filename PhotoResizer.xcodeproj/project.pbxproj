@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		A27926D22C51373C009BA334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926D12C51373C009BA334 /* AppDelegate.swift */; };
 		A27926D42C51373C009BA334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926D32C51373C009BA334 /* SceneDelegate.swift */; };
-		A27926D62C51373C009BA334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926D52C51373C009BA334 /* ViewController.swift */; };
-		A27926D92C51373C009BA334 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A27926D82C51373C009BA334 /* Base */; };
 		A27926DB2C51373E009BA334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27926DA2C51373E009BA334 /* Assets.xcassets */; };
 		A27926DE2C51373E009BA334 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A27926DD2C51373E009BA334 /* Base */; };
+		A27926EA2C516F26009BA334 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926E82C516F26009BA334 /* MainViewController.swift */; };
+		A27926EB2C516F26009BA334 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27926E92C516F26009BA334 /* MainViewController.xib */; };
+		A27926ED2C516F6B009BA334 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926EC2C516F6B009BA334 /* MainViewModel.swift */; };
+		A27926F12C516FAC009BA334 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926EF2C516FAC009BA334 /* SettingsViewController.swift */; };
+		A27926F22C516FAC009BA334 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27926F02C516FAC009BA334 /* SettingsViewController.xib */; };
+		A27926F42C516FD3009BA334 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926F32C516FD3009BA334 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A27926CE2C51373C009BA334 /* PhotoResizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoResizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27926D12C51373C009BA334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27926D32C51373C009BA334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A27926D52C51373C009BA334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A27926D82C51373C009BA334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A27926DA2C51373E009BA334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27926DD2C51373E009BA334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27926DF2C51373E009BA334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27926E82C516F26009BA334 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A27926E92C516F26009BA334 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		A27926EC2C516F6B009BA334 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A27926EF2C516FAC009BA334 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A27926F02C516FAC009BA334 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		A27926F32C516FD3009BA334 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		A27926D02C51373C009BA334 /* PhotoResizer */ = {
 			isa = PBXGroup;
 			children = (
-				A27926D12C51373C009BA334 /* AppDelegate.swift */,
-				A27926D32C51373C009BA334 /* SceneDelegate.swift */,
-				A27926D52C51373C009BA334 /* ViewController.swift */,
-				A27926D72C51373C009BA334 /* Main.storyboard */,
+				A27926E62C516EFD009BA334 /* App */,
+				A27926E52C516EF0009BA334 /* Scenes */,
 				A27926DA2C51373E009BA334 /* Assets.xcassets */,
 				A27926DC2C51373E009BA334 /* LaunchScreen.storyboard */,
-				A27926DF2C51373E009BA334 /* Info.plist */,
 			);
 			path = PhotoResizer;
+			sourceTree = "<group>";
+		};
+		A27926E52C516EF0009BA334 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A27926E72C516F08009BA334 /* Main scene */,
+				A27926EE2C516F94009BA334 /* Settings Scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A27926E62C516EFD009BA334 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A27926D12C51373C009BA334 /* AppDelegate.swift */,
+				A27926D32C51373C009BA334 /* SceneDelegate.swift */,
+				A27926DF2C51373E009BA334 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A27926E72C516F08009BA334 /* Main scene */ = {
+			isa = PBXGroup;
+			children = (
+				A27926E82C516F26009BA334 /* MainViewController.swift */,
+				A27926E92C516F26009BA334 /* MainViewController.xib */,
+				A27926EC2C516F6B009BA334 /* MainViewModel.swift */,
+			);
+			path = "Main scene";
+			sourceTree = "<group>";
+		};
+		A27926EE2C516F94009BA334 /* Settings Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A27926EF2C516FAC009BA334 /* SettingsViewController.swift */,
+				A27926F02C516FAC009BA334 /* SettingsViewController.xib */,
+				A27926F32C516FD3009BA334 /* SettingsViewModel.swift */,
+			);
+			path = "Settings Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +171,8 @@
 			files = (
 				A27926DB2C51373E009BA334 /* Assets.xcassets in Resources */,
 				A27926DE2C51373E009BA334 /* Base in Resources */,
-				A27926D92C51373C009BA334 /* Base in Resources */,
+				A27926EB2C516F26009BA334 /* MainViewController.xib in Resources */,
+				A27926F22C516FAC009BA334 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +183,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27926D62C51373C009BA334 /* ViewController.swift in Sources */,
+				A27926ED2C516F6B009BA334 /* MainViewModel.swift in Sources */,
 				A27926D22C51373C009BA334 /* AppDelegate.swift in Sources */,
 				A27926D42C51373C009BA334 /* SceneDelegate.swift in Sources */,
+				A27926EA2C516F26009BA334 /* MainViewController.swift in Sources */,
+				A27926F12C516FAC009BA334 /* SettingsViewController.swift in Sources */,
+				A27926F42C516FD3009BA334 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A27926D72C51373C009BA334 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A27926D82C51373C009BA334 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A27926DC2C51373E009BA334 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F75Y2M3DZF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoResizer/Info.plist;
+				INFOPLIST_FILE = PhotoResizer/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F75Y2M3DZF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoResizer/Info.plist;
+				INFOPLIST_FILE = PhotoResizer/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
