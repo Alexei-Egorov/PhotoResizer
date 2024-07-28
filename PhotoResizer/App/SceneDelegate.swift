@@ -32,12 +32,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             selectedImage: UIImage(systemName: "gearshape.fill")
         )
         
+        setupNavigationBar()
+        
+        let mainNavigationController = UINavigationController(rootViewController: mainViewController)
+        
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [mainViewController, settingsViewController]
+        tabBarController.viewControllers = [mainNavigationController, settingsViewController]
         
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+    }
+    
+    private func setupNavigationBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .white
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
