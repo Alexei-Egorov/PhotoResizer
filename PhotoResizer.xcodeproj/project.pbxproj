@@ -14,11 +14,12 @@
 		A27926DE2C51373E009BA334 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A27926DD2C51373E009BA334 /* Base */; };
 		A27926EA2C516F26009BA334 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926E82C516F26009BA334 /* MainViewController.swift */; };
 		A27926EB2C516F26009BA334 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27926E92C516F26009BA334 /* MainViewController.xib */; };
-		A27926ED2C516F6B009BA334 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926EC2C516F6B009BA334 /* MainViewModel.swift */; };
 		A27926F12C516FAC009BA334 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926EF2C516FAC009BA334 /* SettingsViewController.swift */; };
 		A27926F22C516FAC009BA334 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A27926F02C516FAC009BA334 /* SettingsViewController.xib */; };
 		A27926F42C516FD3009BA334 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27926F32C516FD3009BA334 /* SettingsViewModel.swift */; };
+		A29B78CA2C59D19400E75C80 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29B78C92C59D19400E75C80 /* UIViewController+Ext.swift */; };
 		A2DCD6862C52A22E00DFB9E3 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DCD6852C52A22E00DFB9E3 /* UIImage+Ext.swift */; };
+		A2ED629A2C57EDE80019CDF8 /* CropRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED62992C57EDE80019CDF8 /* CropRectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +32,12 @@
 		A27926DF2C51373E009BA334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27926E82C516F26009BA334 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A27926E92C516F26009BA334 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		A27926EC2C516F6B009BA334 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		A27926EF2C516FAC009BA334 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A27926F02C516FAC009BA334 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		A27926F32C516FD3009BA334 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A29B78C92C59D19400E75C80 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		A2DCD6852C52A22E00DFB9E3 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		A2ED62992C57EDE80019CDF8 /* CropRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropRectangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				A23A4F3F2C56A18800D41431 /* InteractiveImageView.swift */,
+				A2ED62992C57EDE80019CDF8 /* CropRectangleView.swift */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -110,7 +113,6 @@
 			children = (
 				A27926E82C516F26009BA334 /* MainViewController.swift */,
 				A27926E92C516F26009BA334 /* MainViewController.xib */,
-				A27926EC2C516F6B009BA334 /* MainViewModel.swift */,
 			);
 			path = "Main scene";
 			sourceTree = "<group>";
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				A2DCD6852C52A22E00DFB9E3 /* UIImage+Ext.swift */,
+				A29B78C92C59D19400E75C80 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,7 +218,8 @@
 			files = (
 				A2DCD6862C52A22E00DFB9E3 /* UIImage+Ext.swift in Sources */,
 				A23A4F402C56A18800D41431 /* InteractiveImageView.swift in Sources */,
-				A27926ED2C516F6B009BA334 /* MainViewModel.swift in Sources */,
+				A29B78CA2C59D19400E75C80 /* UIViewController+Ext.swift in Sources */,
+				A2ED629A2C57EDE80019CDF8 /* CropRectangleView.swift in Sources */,
 				A27926D22C51373C009BA334 /* AppDelegate.swift in Sources */,
 				A27926D42C51373C009BA334 /* SceneDelegate.swift in Sources */,
 				A27926EA2C516F26009BA334 /* MainViewController.swift in Sources */,
