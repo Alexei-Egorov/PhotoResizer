@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="PhotoResizer" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="yJn-gZ-zcW" id="Qfu-8M-ZfJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +19,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yJn-gZ-zcW">
+                    <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yJn-gZ-zcW" secondAttribute="trailing" id="Zzs-06-Bxc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yJn-gZ-zcW" secondAttribute="bottom" id="jgF-BA-adB"/>
+                <constraint firstItem="yJn-gZ-zcW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="kYO-dl-Bcf"/>
+                <constraint firstItem="yJn-gZ-zcW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lQc-Lv-G61"/>
+            </constraints>
             <point key="canvasLocation" x="117" y="21"/>
         </view>
     </objects>

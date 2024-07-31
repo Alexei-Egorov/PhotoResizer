@@ -78,14 +78,20 @@ class MainViewController: UIViewController, InteractiveImageViewDelegate {
         let navigationBarHeight = navigationController.navigationBar.frame.height
         let bottomSafeAreaInset = view.safeAreaInsets.bottom
         
-        cropRectangleView = CropRectangleView(frame: CGRect(x: 0, y: statusBarHeight + navigationBarHeight, width: view.frame.width, height: view.frame.height - navigationBarHeight - bottomSafeAreaInset))
+        cropRectangleView = CropRectangleView(
+            frame: CGRect(
+                x: 0,
+                y: statusBarHeight + navigationBarHeight,
+                width: view.frame.width,
+                height: view.frame.height - navigationBarHeight - bottomSafeAreaInset
+            )
+        )
         view.addSubview(cropRectangleView)
         cropRectangleView.setupBorderView()
         
         let xPos = view.center.x - image.size.width / 2
         let yPos = view.center.y - image.size.height / 2
         imageView = InteractiveImageView(frame: CGRect(origin: CGPoint(x: xPos, y: yPos), size: image.size))
-        imageView.contentMode = .scaleAspectFit
         imageView.delegate = self
         imageView.image = image
         view.insertSubview(imageView, at: 0)
@@ -152,11 +158,6 @@ class MainViewController: UIViewController, InteractiveImageViewDelegate {
         picker.delegate = self
         present(picker, animated: true)
     }
-    
-    deinit {
-        print("MainViewController has been deinitialized")
-    }
-
 }
 
 // MARK: - PHPicker View Controller Delegate
